@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     (r'^api/', include('billy.web.api.urls')),
     (r'^admin/', include('billy.web.admin.urls')),
     (r'^djadmin/', include(admin.site.urls)),
-    #(r'^', include('billy.web.public.urls')),
+    (r'^', include('billy.web.public.urls')),
 )
 
 if settings.DEBUG:

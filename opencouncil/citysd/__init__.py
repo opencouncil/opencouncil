@@ -3,7 +3,7 @@ import lxml.html
 
 metadata = dict(
     name='City of San Diego',
-    abbreviation='',
+    abbreviation='citysd',
     capitol_timezone='US/Pacific',
     legislature_name='San Diego City Council',
     chambers = {

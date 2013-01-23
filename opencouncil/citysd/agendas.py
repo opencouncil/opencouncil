@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 
 class SDCCAgendaScraper(AgendaScraper):
-    jurisdiction = 'sd'
+    jurisdiction = 'citysd'
     
     _tz = pytz.timezone('US/Pacific')
 

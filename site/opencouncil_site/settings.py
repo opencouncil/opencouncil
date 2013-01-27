@@ -149,7 +149,35 @@ LOGGING = {
     }
 }
 
-ACTIVE_STATES = [u'citysd','oceanside']
+ACTIVE_STATES = [   
+                    # County
+                    'countysd',
+                    # Cities
+                    'citysd',
+                    'carlsbad',
+                    'coronado',
+                    'delmar',
+                    'imperialbeach',
+                    'oceanside',
+                    'sanmarcos',
+                    'sdupd',
+                    'chulavista',
+                    'elcajon',
+                    'lamesa',
+                    'nationalcity',
+                    'poway',
+                    'santee',
+                    'solanabeach',
+                    'escondido',
+                    'lemongrove',
+                    'vista'
+                    # Joint Powers Agencies
+                    'sandag',
+                    # Transportation and Infrastructure
+                    'nctd',
+                    'mts',
+                    'sdcwa',
+]
 LOCKSMITH_REGISTRATION_URL = 'http://services.sunlightlabs.com/accounts/register/'
 NERD_MODE = True
 ADMIN_MODE = True

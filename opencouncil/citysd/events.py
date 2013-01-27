@@ -1,14 +1,14 @@
 import datetime
 
 from billy.scrape import NoDataForPeriod
-from billy.scrape.agendas import AgendaScraper, Agenda
+from billy.scrape.events import EventScraper, Event
 
 import lxml.html
 import pytz
 import requests
 from bs4 import BeautifulSoup
 
-class SDCCAgendaScraper(AgendaScraper):
+class CitySDEventScraper(EventScraper):
     jurisdiction = 'citysd'
     
     _tz = pytz.timezone('US/Pacific')
@@ -32,14 +32,14 @@ class SDCCAgendaScraper(AgendaScraper):
                 when = self._tz.localize(when)
 
                 desc = title 
-                #agenda = div.xpath("string(span[3])").strip()
-                # XXX: Process `agenda' for related bills.
-                agenda = Agenda(session, when, 'council:meeting',desc,
+                #event = div.xpath("string(span[3])").strip()
+                # XXX: Process `event' for related bills.
+                event = Event(session, when, 'council:meeting',desc,
                                 location=None)
-                agenda.add_source(url)
+                event.add_source(url)
 
                 # desc is actually the ctty name.
                 #event.add_participant('host', desc, 'committee',
                 #                        chamber=chamber)
 
-                self.save_agenda(agenda)
+                self.save_event(event)

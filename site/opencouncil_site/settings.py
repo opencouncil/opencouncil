@@ -149,7 +149,7 @@ LOGGING = {
     }
 }
 
-ACTIVE_STATES = [u'citysd',]
+ACTIVE_STATES = [u'citysd','oceanside']
 LOCKSMITH_REGISTRATION_URL = 'http://services.sunlightlabs.com/accounts/register/'
 NERD_MODE = True
 ADMIN_MODE = True

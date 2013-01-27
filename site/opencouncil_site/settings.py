@@ -170,7 +170,7 @@ ACTIVE_STATES = [
                     'solanabeach',
                     'escondido',
                     'lemongrove',
-                    'vista'
+                    'vista',
                     # Joint Powers Agencies
                     'sandag',
                     # Transportation and Infrastructure

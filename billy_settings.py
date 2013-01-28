@@ -5,7 +5,7 @@ from os.path import abspath, dirname, join
 SCRAPER_PATHS=[os.path.join(os.getcwd(), 'opencouncil')]
 MONGO_HOST = 'localhost'
 MONGO_PORT = 27017
-MONGO_DATABASE = 'opencouncil'
+MONGO_DATABASE = 'ecitizens'
 
 PARTY_DETAILS = {
     # reminder: think through Singular, Plural, Adjective

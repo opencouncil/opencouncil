@@ -14,6 +14,8 @@ class CountySDLegislatorScraper(LegislatorScraper):
     legislators_url = base_url + 'general/bos.html'
     
     def scrape(self, chamber, term):
+        if chamber == 'lower':
+            return
         html = self.urlopen(self.legislators_url)
         doc = lxml.html.fromstring(html)
         table  = doc.xpath('//table')[27]

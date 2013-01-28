@@ -8,7 +8,6 @@ metadata = dict(
     legislature_name='Santee City Council',
     chambers = {
         'upper': {'name': 'Council', 'title': 'Councilmember'},
-        'lower': {'name': 'something', 'title': 'else'},
     },
     terms=[
         {'name': '2011-2012', 'start_year': 2011,

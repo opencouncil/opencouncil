@@ -14,6 +14,8 @@ class CitySDLegislatorScraper(LegislatorScraper):
     legislators_url = base_url + '/citycouncil/'
     
     def scrape(self, chamber, term):
+        if chamber == 'lower':
+            return
         html = self.urlopen(self.legislators_url)
         doc = lxml.html.fromstring(html)
         members = doc.xpath('//div[@id="cdlist"]/div[@class="cd"]')

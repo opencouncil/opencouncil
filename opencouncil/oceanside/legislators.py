@@ -12,6 +12,8 @@ class OceansideLegislatorScraper(LegislatorScraper):
     legislators_url = base_url + "/gov/council/default.asp"
     
     def scrape(self, chamber, term):
+        if chamber == 'lower':
+            return
         html = self.urlopen(self.legislators_url)
         doc = lxml.html.fromstring(html)
         cells = doc.xpath('//table/tbody/tr/td')

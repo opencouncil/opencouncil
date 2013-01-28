@@ -8,7 +8,6 @@ metadata = dict(
     legislature_name='San Diego County Board of Supervisors',
     chambers = {
         'upper': {'name': 'Board', 'title': 'Supervisor'},
-        'lower': {'name': 'something', 'title': 'else'},
     },
     terms=[
         {'name': '2011-2012', 'start_year': 2011,
